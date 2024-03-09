@@ -1,5 +1,13 @@
 # Virtual Interface Sample
 
+
+## DUV
+Device Under Test
+
+32bit counter
+with enable pin,and asynchronous reset pin
+
+
 ## Test Bench
 
 the structure of Test Bench is
