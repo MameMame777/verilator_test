@@ -39,3 +39,6 @@ class counter_test_driver has task....
 class counter_test_driver has task...
 - check_count
   judge counter value vs expected value
+
+##  How to run
+  execute make command
