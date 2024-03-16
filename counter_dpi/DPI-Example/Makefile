@@ -1,5 +1,5 @@
-rtl    := ./dpi_example.sv
-c_src  := ./dpi_example.c
+rtl    := ./dpi_example.sv ./dpi_dut.sv
+c_src  := ./dpi_example.cpp
 exec   := run.x
 opt    := --binary --cc 
 
