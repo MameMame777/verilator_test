@@ -4,7 +4,7 @@
 #include "Vdpi_example__Dpi.h"
 extern void sv_task_display();
 extern void sv_task_display_arg(int a, int b);
-extern void sv_task3(int a, int b);
+extern void sv_task_val_set(int a, int b);
 extern void sv_judge(int a, int b, int* c);
 
 
