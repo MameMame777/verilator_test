@@ -1,12 +1,4 @@
 
-class testclass;
-  function new();
-  endfunction
-  task class_diplay;
-    $display("This is a task called from class");
-  endtask
-endclass
-
 module top;
 
   import "DPI-C" context function int c_function(int in);
@@ -17,7 +9,7 @@ module top;
   export "DPI-C"  task dut_if_display;
   export "DPI-C"  task dipslay_class;
 
-  testclass t =new();
+  testclass t = new();
   
   logic clk;
   logic reset;
@@ -32,7 +24,7 @@ module top;
   int in = 10;
   int out;
 
-  task  sv_task_display;
+    task  sv_task_display;
     $display("This is a SystemVerilog task called from C.");
   endtask
 
