@@ -1,6 +1,6 @@
 rtl    := ./counter.sv
 if      :=./counter_if.sv
-verif  := ./counter_test_class.sv  ./counter_test_top.sv  
+verif  := ./counter_test_class.sv  ./counter_test_top.sv   ./counter_test.cpp
 exec   := run.x
 opt    := --binary --trace
 

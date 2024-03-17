@@ -35,7 +35,6 @@ class counter_test_checker;
     end else begin
       $display("Test passed: expected %0d, got %0d", expected_count, ifc.counter);
     end
-    #10
     expected_count = expected_count + 1;  // Update the expected count for the next test
   endtask
 endclass
