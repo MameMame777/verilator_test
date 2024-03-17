@@ -1,4 +1,12 @@
 
+class testclass;
+  function new();
+  endfunction
+  task class_diplay;
+    $display("This is a task called from class");
+  endtask
+endclass
+
 module top;
 
   import "DPI-C" context function int c_function(int in);
@@ -6,6 +14,10 @@ module top;
   export "DPI-C"  task sv_task_display_arg;
   export "DPI-C"  task sv_task_val_set;
   export "DPI-C"  task sv_task_judge;
+  export "DPI-C"  task dut_if_display;
+  export "DPI-C"  task dipslay_class;
+
+  testclass t =new();
   
   logic clk;
   logic reset;
@@ -32,6 +44,14 @@ module top;
     DUT_IF.a[1:0] = a[1:0];
     DUT_IF.b[1:0] = b[1:0];
   endtask
+
+  task dut_if_display;
+    DUT_IF.dut_if_display;
+  endtask
+
+  task dipslay_class;
+    t.class_diplay; 
+  endtask 
 
   task sv_task_judge(input int val=32'h0, input int exp=32'h0, output int result );
     if(val == exp) begin

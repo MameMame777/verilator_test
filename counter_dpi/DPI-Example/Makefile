@@ -1,7 +1,7 @@
 rtl    := ./dpi_example.sv ./dpi_dut.sv
 c_src  := ./dpi_example.cpp
 exec   := run.x
-opt    := --binary --cc 
+opt    := --binary 
 
 
 run: compile 
