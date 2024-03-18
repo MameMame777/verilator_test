@@ -2,7 +2,7 @@ rtl_hd := ./dpi_class.svh ./dpi_if.svh
 rtl    := ./dpi_example.sv ./dpi_dut.sv 
 c_src  := ./dpi_example.cpp
 exec   := run.x
-opt    := --binary 
+opt    := --binary --trace
 
 
 run: compile 

@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include "svdpi.h"
-#include "Vdpi_example__Dpi.h"
+#include "Vdpi_class__Dpi.h"
 extern void sv_task_display();
 extern void sv_task_display_arg(int a, int b);
 extern void sv_task_val_set(int a, int b);
